@@ -15,6 +15,9 @@ nav {
 }
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .box1{
  margin: 0;
@@ -39,14 +42,34 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    flex: 1;
 }
 
 section {
     text-align: center;
     padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.divfooter{
+
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+nav li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav li:hover {
+    color: orange;
+}
+.divfooter {
     background-color: rgb(203, 203, 204);
     width: 100%;
+   
+   
+    display: flex;
 }
 
