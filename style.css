@@ -45,8 +45,12 @@ section {
     text-align: center;
     padding: 30px;
 }
-.divfooter{
+.divfooter {
     background-color: rgb(203, 203, 204);
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
 }
 
